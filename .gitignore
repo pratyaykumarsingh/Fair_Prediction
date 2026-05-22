@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+venv/
+.mypy_cache/
+node_modules/
+.ipynb_checkpoints/
