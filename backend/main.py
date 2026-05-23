@@ -14,6 +14,13 @@ model = joblib.load(model_path)
 
 
 app = FastAPI()
+
+# ✅ Routes
+@app.get("/")
+def home():
+    return {"message": "Hello Pratyay 👋 Your API is successfully deployed and live 🚀"}
+
+# ✅ Middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # or ["http://localhost:3000", "http://127.0.0.1:3000"]
