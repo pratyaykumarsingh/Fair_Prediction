@@ -1,10 +1,9 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import joblib
-import pandas as pd
 import os
-from fastapi import Query
+
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
