@@ -18,7 +18,7 @@ app = FastAPI()
 # ✅ Routes
 @app.get("/")
 def home():
-    return {"message": "Hello Pratyay 👋 Your API is successfully deployed and live 🚀"}
+    return {"message": "Hello, Your API is successfully deployed and live."}
 
 # ✅ Middleware
 app.add_middleware(
